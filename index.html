@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Animation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #b2fab4; /* Pastel green background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        .letter-emoji {
+            font-size: 5em;
+            cursor: pointer;
+            transition: opacity 0.5s;
+        }
+        .letter-container {
+            display: none;
+            width: 60vw; /* Responsive width */
+            max-width: 105mm; /* A6 width in portrait */
+            height: calc(60vw * 1.414); /* Responsive height maintaining A6 aspect ratio in portrait */
+            max-height: 148mm; /* A6 height in portrait */
+            background: #f8f8f8; /* Off-white background */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            animation: grow 0.5s forwards;
+        }
+        .letter-content {
+            font-family: 'Fira Code', monospace; /* Apply FiraCode font */
+            font-size: 12px;
+            line-height: 1.5;
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            .letter-container {
+                width: 80vw; /* Adjust width for smaller screens */
+                height: calc(80vw * 1.414); /* Adjust height maintaining A6 aspect ratio in portrait */
+            }
+        }
+        .emoji {
+            position: absolute;
+            font-size: 2em;
+            animation: explode 1s ease-out forwards, fadeOut 3s ease-out 1s forwards;
+        }
+        @keyframes explode {
+            from {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: translate(var(--x), var(--y)) scale(2);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+            }
+        }
+        @keyframes grow {
+            to {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-emoji" onclick="openLetter()">✉️</div>
+    <div class="letter-container" id="letterContainer">
+        <div class="letter-content">
+            <p>BOMMMM DIAAAAA, MEU AMORRRR!</p>
+
+            <p>FELIZ ANIVERSÁRIOOOOOO 🎉🎉🎉</p>
+                
+                <p>Hoje é um dia MUITOOO ESPECIAAAALL!!!</p>
+                
+                DIA 15 DE SETEMBRO, DIA DA DEMOCRACIA? NÃO!<br><br>
+                DIA 21 DE SETEMBRO, DIA DA ÁRVORE? NÃO!<br><br>
+                
+                É ALGUM FERIADO? NÃO!! (mas podia ser, pra termos sempre o dia livre pra comemorar esse dia único)
+                <br><br>
+                Mas afinal, por que esse dia é tão especial?<br><br>
+                
+                PORQUE HOJE É DIA 2 DE SETEMBROOOO, O DIAZINHO DO AMOR DA MINHA VIDAAAAA 🥳🥳🥳<br><br>
+                
+                PARABÉNS, MI AMORRRRR!!! 🎉🎉🎉<br><br>
+                
+                Hoje é um dia especial, mas a verdade é que todos os dias ao seu lado são especiais para mim. Neste diazinho, eu quero te lembrar de algumas coisas que você já sabe: primeiro, que você é uma mulher incrível; segundo, que eu tenho tanto orgulho de tudo o que você é e faz; e terceiro, que eu te amo profundamente.<br><br>
+                
+                Quando falamos da palavra "incrível", falamos automaticamente de você, e não sou só eu que acho isso, viu? No dicionário está escrito isso, olha só:<br><br>
+
+                <img src="/home/vinicius/Estudos/project/dicionario.jpeg"/> <br><br>
+
+                
+                Eu te acho incrível por um bilhão de motivos, entre eles:
+                
+                Você tira as músicas no teclado só ouvindo, e eu acho isso incrível! 🤯<br><br>
+                Você é incrivelmente engraçada, e eu amo quando você ri. É uma risada gostosa de ouvir, e o seu senso de humor é sensacional.<br><br>
+                Você tem um carinho pelas pessoas que é deslumbrante. É lindo ver você conversando com as pessoas e dedicando tempo ouvindo-as. Pode parecer algo simples, mas naquela virada de ano em que fomos à casa dos meus avós paternos, eu fiquei reparando em você, conversando e ouvindo meus avós sobre as viagens deles. Me deu um quentinho no coração, porque sei que isso é algo que eles gostam muito, e você parou pra ouvi-los, como sempre faz. Mesmo quando está cansada, você está ali pra quem precisa de você, e isso é algo incrível.Eu me inspiro em você todos os dias. <br><br>
+
+                Sou imensamente grato por ter a oportunidade de dividir a vida com você. Cada gesto seu, cada palavra, cada atitude, cada sorriso, tudo em você reflete Jesus de uma maneira tão pura e linda. Você é um exemplo de amor, força e determinação, e eu me sinto abençoado por poder aprender com você todos os dias. Eu gostaria que o mundo inteiro tivesse um coração puro e tão doce como o seu. Você alegra todos os meus dias e momentos; você é o puro carisma, até mesmo quando está sem carisma 🤣. Você é como o sol num dia frio, acolhendo e aquecendo, trazendo conforto e paz para todos que estão ao seu redor.<br><br>
+                
+                Você é forte, determinada, carinhosa e absurdamente espetacular. Cada traço seu me faz te amar ainda mais, e meu desejo é poder retribuir ao menos um pouco de tudo que você me proporciona. Que o Senhor te abençoe muito, que você siga firme e forte junto d’Ele, crescendo cada vez mais em comunhão com o Senhor e seguindo os caminhos que Ele trilhou pra você. Que você se pareça a cada dia mais com Jesus, continue inspirando as pessoas e sendo luz por onde passar. Que venham muitas viagens pela frente, um dindin no bolso que é sempre bom também, muitos tênis maneiros e looks lindos. Que venham mais tempos de qualidade e paz. Que sua vida seja repleta de bênçãos, alegrias e muito amor.<br><br>
+                
+                Parabéns, gatinha. 🫶🏼 Eu te amo mais do que palavras podem expressar, e sempre estarei aqui, ao seu lado, pra tudo que precisar, sempre aprendendo e crescendo com você.</p>
+            <p>Com amor e carinho,<br>Vini.</p>
+        </div>
+    </div>
+
+    <script>
+        function openLetter() {
+            document.querySelector('.letter-emoji').style.opacity = '0';
+            setTimeout(() => {
+                document.querySelector('.letter-emoji').style.display = 'none';
+                const letterContainer = document.getElementById('letterContainer');
+                letterContainer.style.display = 'block';
+                letterContainer.style.animation = 'grow 0.5s forwards';
+                addEmojis();
+            }, 500);
+        }
+
+        function addEmojis() {
+            const emojis = ['🎈', '🎉', '🎊'];
+            const letterContainer = document.getElementById('letterContainer');
+            const rect = letterContainer.getBoundingClientRect();
+            for (let i = 0; i < 20; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji';
+                emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                emoji.style.left = `${rect.left + rect.width / 2}px`;
+                emoji.style.top = `${rect.top + rect.height / 2}px`;
+                emoji.style.setProperty('--x', `${Math.random() * window.innerWidth - window.innerWidth / 2}px`);
+                emoji.style.setProperty('--y', `${Math.random() * window.innerHeight - window.innerHeight / 2}px`);
+                document.body.appendChild(emoji);
+                setTimeout(() => {
+                    emoji.remove();
+                }, 4000); // Remove emoji after 4 seconds
+            }
+        }
+    </script>
+</body>
+</html>
